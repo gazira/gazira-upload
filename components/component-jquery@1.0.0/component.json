@@ -1,0 +1,8 @@
+{
+  "name": "jquery",
+  "repo": "component/jquery",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": ["index.js"],
+  "dependencies": {}
+}

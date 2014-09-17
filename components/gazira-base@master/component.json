@@ -1,0 +1,9 @@
+{
+    "name": "aralejs-base",
+    "version": "0.0.1",
+    "main": "base.js",
+    "dependencies": {
+        "gazira/class": "master",
+        "gazira/events": "master"
+    }
+}

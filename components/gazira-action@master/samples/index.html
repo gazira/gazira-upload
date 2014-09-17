@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>action</title>
+    <meta charset="utf-8"/>
+</head>
+<body data-action="body-alert">
+    <div id="box1">
+        <input type="button" value="alert" data-action="alert"/>
+    </div>
+    <div id="box2" data-action="p">
+        <input type="button" value="允许冒泡到父节点，父节点不再往上冒泡" data-action="alert"/>
+    </div>
+    <div id="box3">
+        <input type="button" value="可冒泡" data-action="alert"/>
+    </div>
+    <div id="box4" data-action="alert">
+        <input type="button" value="禁止冒泡 1"/>
+        <input type="button" value="禁止冒泡 2"/>
+        <input type="button" value="禁止冒泡 3"/>
+    </div>
+    <div id="box5">
+        <input type="button" value="aim1 不点击我会触发(仅触发1次 return other)" data-action="aim1"/>
+        <input type="button" value="aim2 不点击我会触发(会不停触发 return false)" data-action="aim2"/>
+    </div>
+    <div id="box6">
+        <input type="button" value="触发事件A、B、C" data-action="A B C"/>
+    </div>
+    <div id="box7">
+        <input type="button" value="奇数次点击触发、偶数则不触发Aspect(before is after)" data-action="aspect"/>
+    </div>
+
+    <script src="./dist.js"></script>
+</body>
+</html>

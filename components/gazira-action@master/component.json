@@ -1,0 +1,7 @@
+{
+    "name": "gazira-action",
+    "version": "0.0.5",
+    "main": "index.js",
+    "dependencies": {
+    }
+}

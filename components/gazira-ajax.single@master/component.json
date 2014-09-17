@@ -1,0 +1,8 @@
+{
+    "name": "gazira-ajax-single",
+    "version": "0.0.1",
+    "main": "index.js",
+    "dependencies": {
+        "component/jquery": "1.0.0"
+    }
+}

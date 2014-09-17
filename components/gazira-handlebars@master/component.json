@@ -1,0 +1,7 @@
+{
+    "name": "gazira-handlebars",
+    "version": "0.0.1",
+    "main": "handlebars.js",
+    "dependencies": {
+    }
+}
