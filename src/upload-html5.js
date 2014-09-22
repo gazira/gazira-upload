@@ -375,12 +375,38 @@ var Upload = Base.extend({
 });
 
 
-Upload.preview = function (file, callback) {
-    var reader = new FileReader();
-    reader.readAsDataURL(file);
-    reader.onload = function () {
-        callback && callback.call(this, file, this.result)
+Upload.preview = function (file, config, callback) {
+    var canvas = document.createElement('canvas');
+    var context = canvas.getContext('2d');
+    var error = null;
+    var _config = {
+        width: 80,
+        height: 80,
+        top: 0,
+        left: 0,
+        imgWidth: 80,
+        imgHeight: 80
     };
+    config = $.extend(config, _config);
+    canvas.width = config.width;
+    canvas.height = config.height;
+
+    var reader = new FileReader();
+    reader.onload = function (event) {
+        var dataUri = event.target.result;
+        var img = new Image();
+        img.onload = function () {
+            // todo: 图片等比例处理
+            context.drawImage(img, config.top, config.left, config.imgWidth, config.imgHeight);
+        };
+        img.src = dataUri;
+        callback && callback.call(this, error, canvas, file)
+    };
+
+    reader.onerror = function (event) {
+        callback && callback.call(this, event.target.error, canvas, file)
+    };
+    reader.readAsDataURL(file);
 };
 
 Upload.isSupportHTML5Upload = isSupportHTML5Upload;
