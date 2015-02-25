@@ -1,7 +1,0 @@
-{
-    "name": "arale-events",
-    "version": "0.0.1",
-    "main": "events.js",
-    "dependencies": {
-    }
-}
