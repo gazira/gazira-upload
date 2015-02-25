@@ -1,7 +1,6 @@
 var $ = require('jquery');
-var String = require('gazira/string@master');
+var String = require('gazira-string');
 var tpl = require('./item.handlebars');
-var Handlebars = require('gazira/handlebars@master');
 
 module.exports = {
     item: function (file, msg, node, which) {
@@ -13,7 +12,7 @@ module.exports = {
                 fullSharp: true
             });
         }
-        $(node || '#result').append(Handlebars.compile(tpl)({
+        $(node || '#result').append(tpl({
             file: file,
             msg: msg,
             name: name,

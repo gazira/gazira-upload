@@ -1,6 +1,6 @@
-var $ = require('component/jquery@1.0.0');
+var $ = require('jquery');
 var helper = require('./helper');
-var Action = require('gazira/action@master');
+var Action = require('gazira-action');
 var Upload = require('../src/upload-html5');
 
 $(function () {
