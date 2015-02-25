@@ -1,0 +1,26 @@
+{
+    "name": "gazira-upload",
+    "version": "0.0.1",
+    "main": "index.js",
+    "description": "web upload tool",
+    "keywords": [
+        "widget",
+        "upload"
+    ],
+    "spm": {
+        "main": "index.js",
+        "buildArgs": "",
+        "dependencies": {
+            "jquery": "1.11.1",
+            "arale-base": "1.2.0",
+            "arale-class": "1.2.0"
+        },
+        "devDependencies": {
+
+        },
+        "tests": "",
+        "ignore": [
+            "components"
+        ]
+    }
+}
