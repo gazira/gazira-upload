@@ -1,4 +1,4 @@
-var Class = require('class');
+var Class = require('arale-class');
 var SwfUpload = require('./upload-swfupload');
 var Html5Upload = require('./upload-html5');
 var Upload = Class.create({

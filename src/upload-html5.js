@@ -1,5 +1,5 @@
 var $ = require('jquery');
-var Base = require('base');
+var Base = require('arale-base');
 var DragUpload = require('./upload-draggable');
 
 var helper = {

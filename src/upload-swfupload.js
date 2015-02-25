@@ -1,6 +1,6 @@
 var $ = require('jquery');
 var SWFUpload = require('./swfupload');
-var Base = require('base');
+var Base = require('arale-base');
 
 /**
  * Queue Error错误码
