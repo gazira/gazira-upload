@@ -4,7 +4,7 @@
     "main": "index.js",
     "dependencies": {
         "component/jquery": "1.0.0",
-        "gazira/base": "master",
-        "gazira/class": "master"
+        "gazira/arale-base": "1.2.0",
+        "gazira/arale-class": "1.2.0"
     }
 }
