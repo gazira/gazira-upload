@@ -46,7 +46,7 @@ var Upload = Base.extend({
         draggable: true, // 是否可拖拽上传
         container: document.body, // 接受拖拽上传的容器
         template: function () {
-            return '<span class="btn btn-success fileinput-button"><span><i class="glyphicon glyphicon-plus"></i> 选择图片</span><input type="file" ' + (this.get('multi') ? ' multiple="true"' : '') + ' name="' + this.get('fileName') + '"/></span>'
+            return '<span class="btn btn-success fileinput-button"><span><i class="glyphicon glyphicon-plus"></i> ' + this.get('text') + '</span><input type="file" ' + (this.get('multi') ? ' multiple="true"' : '') + ' name="' + this.get('fileName') + '"/></span>'
         },
 
         fileName: 'Filedata', // 该参数设置了POST信息中上传文件的name值
